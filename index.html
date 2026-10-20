@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FaceCheck - Reverse Image Search - Face Recognition Search Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light border-bottom box-shadow mb-3">
+        <div id="navbar" class="container">
+          <a class="navbar-brand logolink" href="/">
+            <span class="logo-text">FaceCheck.ID</span>
+          </a>
+          <ul class="nav navbar-nav topmenu">
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#buy">Buy Credits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#remove">Removal Request</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main class="pb-3">
+        <div class="text-center" id="search_console">
+          <h1 class="findppl">Find People Online by Photo</h1>
+          <div id="viewContent">
+            <div id="drop-area">
+              <form class="my-form" id="uploadForm">
+                <p class="drop_instr">
+                  <span class="desktop">Drop photo(s) of the person you want to find</span>
+                </p>
+                <input type="file" id="fileElem" multiple accept="image/*" />
+                <label class="button browsebutton" for="fileElem">Browse...</label>
+              </form>
+              <div id="gallery"></div>
+            </div>
+          </div>
+          
+          <button id="searchButton" class="button-24">Search Internet by Face</button>
+          
+          <div id="agreecheck_main" class="form-check" style="margin-top: 15px;">
+            <input class="form-check-input" type="checkbox" id="iagree_main" />
+            <label class="form-check-label" for="iagree_main">
+              I agree to the <a href="#terms">terms of use</a>
+            </label>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+      <div class="container disclaimer">
+        <b>DISCLAIMER:</b> For educational purposes only. All images are indexed from public web pages.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
